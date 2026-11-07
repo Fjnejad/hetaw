@@ -438,3 +438,17 @@ h1,h2,h3,p{margin:0}
 .pzi-label text.sub{font-size:10px;font-weight:500;fill:#E0B35A}
 .pz{transform-origin:300px 200px}
 .pz-final rect{fill:var(--ink)}
+
+/* labelled jigsaw (static picture + staggered labels) */
+.jg-svg{width:100%;height:auto;display:block;border-radius:12px}
+.jg-chip{opacity:0;transform:translateY(6px);transition:opacity .45s ease,transform .45s ease;transition-delay:calc(.35s + var(--i) * .13s)}
+.reveal.in .jg-chip{opacity:1;transform:none}
+.jg-chip.common rect{fill:#0B1A33;opacity:.92}
+.jg-chip.common text{fill:#FFFFFF;font-family:var(--sans);font-size:11.5px;font-weight:600}
+.jg-chip.rare rect{fill:#FFFFFF;stroke:#9AA3B5;stroke-width:1.2;stroke-dasharray:3 2}
+.jg-chip.rare text{fill:#5B6479;font-family:var(--sans);font-size:11px;font-weight:600}
+.jg-legend{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:14px;font-size:13px;color:var(--muted);align-items:center}
+.jg-legend span{display:inline-flex;align-items:center;gap:8px}
+.jg-legend i{width:14px;height:14px;border-radius:4px;display:inline-block}
+.jg-legend .k1{background:#0B1A33}.jg-legend .k2{background:#FFFFFF;border:1.2px dashed #9AA3B5}
+@media (prefers-reduced-motion:reduce){.jg-chip{opacity:1;transform:none;transition:none}}
