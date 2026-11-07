@@ -161,10 +161,10 @@ index = head("HETAW — Recognise endometriosis earlier, at the first visit",
 <section class="lp-section lp-tint" id="pieces">
   <div class="wrap pz-wrap">
     <div class="pz-copy reveal">
-      <p class="lp-kicker">The scatter signature</p>
-      <h2>Each symptom on its own looks like something else.</h2>
-      <p class="lp-p">Pelvic pain, painful periods, bowel and bladder complaints, fatigue, difficulty conceiving — seen one at a time, by five different specialists, none of them points to endometriosis. Seen together, at the first visit, they form one picture.</p>
-      <p class="lp-p">That is what a structured symptom history does: it puts the pieces on the same table.</p>
+      <p class="lp-kicker">Wrong diagnoses first</p>
+      <h2>Three in four women are told it is something else.</h2>
+      <p class="lp-p">Irritable bowel. Cystitis. “Normal” period pain. Pelvic inflammatory disease. Stress. Appendicitis. Each label fits one fragment of the picture, each is treated on its own, and each costs months or years — until someone puts the pieces together.</p>
+      <p class="lp-p">A structured symptom history at the first visit puts them on the same table from the start.</p>
     </div>
     <div class="pz-stage reveal delay-1">
       ''' + PUZZLE + '''
