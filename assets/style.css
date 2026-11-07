@@ -48,6 +48,20 @@ h1,h2,h3,p{margin:0}
 .hero .wrap.hero-banner{display:block;padding-top:0;padding-bottom:72px}
 .hero-banner img{display:block;width:100%;max-width:none;height:300px;object-fit:cover;object-position:center 45%}
 
+/* subpage hero */
+.page-hero .wrap{padding-top:64px;padding-bottom:56px;display:flex;flex-direction:column;gap:20px;max-width:1200px}
+.page-hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(34px,4.4vw,54px);line-height:1.08;max-width:900px}
+.page-hero .lede{font-size:19px}
+.nav a[aria-current="page"]{border-bottom:2px solid var(--ink)}
+.audience-links a{display:flex;flex-direction:column;gap:8px}
+.audience-links a:hover h3{color:var(--gold-dark)}
+.audience-links .more{font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:var(--gold-dark);margin-top:4px}
+.subhead{font-family:var(--serif);font-size:26px;font-weight:600;margin-top:8px}
+.principles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.principles div{border-top:1px solid var(--rule);padding-top:14px}
+.principles strong{display:block;font-size:16px;margin-bottom:6px}
+.principles p{font-size:15px;line-height:1.6;color:var(--ink-2)}
+
 /* chapters */
 .chapter{border-top:1px solid var(--rule)}
 .chapter .wrap{padding-top:72px;padding-bottom:72px;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:32px}
@@ -161,7 +175,7 @@ h1,h2,h3,p{margin:0}
   .hero-main,.hero-side{grid-column:span 12}
   .hero-side{border-left:0;padding-left:0;border-top:1px solid var(--rule);padding-top:24px}
   .chapter-label,.chapter-body{grid-column:span 12}
-  .figures,.partners,.problem-split{grid-template-columns:1fr}
+  .figures,.partners,.problem-split,.principles{grid-template-columns:1fr}
   .scatter,.flow{grid-template-columns:1fr;gap:18px}
   .scatter li+li::before,.scatter li+li::after,.flow::before{display:none}
   .flow li{text-align:left;align-items:flex-start;padding-left:14px}
@@ -180,3 +194,6 @@ h1,h2,h3,p{margin:0}
   .figure .num{font-size:52px}
   .nav{gap:6px 18px;font-size:13px}
 }
+
+/* two dark chapters in a row */
+.chapter.dark + .chapter.dark{border-top:1px solid var(--rule-dark)}
