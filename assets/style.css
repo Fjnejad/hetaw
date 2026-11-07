@@ -62,6 +62,24 @@ h1,h2,h3,p{margin:0}
 .principles strong{display:block;font-size:16px;margin-bottom:6px}
 .principles p{font-size:15px;line-height:1.6;color:var(--ink-2)}
 
+/* home teasers */
+.readmore{display:inline-block;font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:var(--gold-dark);border-bottom:2px solid var(--gold);padding-bottom:3px;align-self:flex-start}
+.readmore:hover{color:var(--ink);border-color:var(--ink)}
+.readmore.light{color:var(--gold)}
+.readmore.light:hover{color:var(--on-dark);border-color:var(--on-dark)}
+.method-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.method-row div{border-top:1px solid var(--rule);padding-top:16px;display:flex;flex-direction:column;gap:8px}
+.method-row .roman{font-family:var(--serif);font-size:34px;line-height:1;color:var(--gold-dark)}
+.method-row h3{font-size:18px;font-weight:600}
+.method-row p{font-size:15px;line-height:1.6;color:var(--ink-2)}
+.tags .readmore{margin-left:auto}
+.roadmap-row3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.roadmap-row3 div{border-top:1px solid var(--rule-dark);padding-top:16px;display:flex;flex-direction:column;gap:6px}
+.roadmap-row3 .when{font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--on-dark-muted)}
+.roadmap-row3 .when.gold{color:var(--gold)}
+.roadmap-row3 strong{font-size:18px;font-weight:600}
+.roadmap-row3 p{font-size:15px;line-height:1.55;color:var(--on-dark-muted)}
+
 /* chapters */
 .chapter{border-top:1px solid var(--rule)}
 .chapter .wrap{padding-top:72px;padding-bottom:72px;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:32px}
@@ -175,7 +193,8 @@ h1,h2,h3,p{margin:0}
   .hero-main,.hero-side{grid-column:span 12}
   .hero-side{border-left:0;padding-left:0;border-top:1px solid var(--rule);padding-top:24px}
   .chapter-label,.chapter-body{grid-column:span 12}
-  .figures,.partners,.problem-split,.principles{grid-template-columns:1fr}
+  .figures,.partners,.problem-split,.principles,.method-row,.roadmap-row3{grid-template-columns:1fr}
+  .tags .readmore{margin-left:0}
   .scatter,.flow{grid-template-columns:1fr;gap:18px}
   .scatter li+li::before,.scatter li+li::after,.flow::before{display:none}
   .flow li{text-align:left;align-items:flex-start;padding-left:14px}
