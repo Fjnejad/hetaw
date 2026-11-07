@@ -37,7 +37,7 @@ h1,h2,h3,p{margin:0}
 .hero-main{grid-column:span 8;display:flex;flex-direction:column;gap:28px}
 .hero-side{grid-column:span 4;display:flex;flex-direction:column;gap:18px;border-left:1px solid var(--rule);padding-left:28px}
 .kicker{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-dark);font-weight:600}
-.hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(44px,7vw,84px);line-height:.98;letter-spacing:-.01em}
+.hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(40px,5.4vw,66px);line-height:1.04;letter-spacing:-.01em}
 .lede{font-size:21px;line-height:1.5;max-width:640px;color:var(--ink-2)}
 .hero-side .quote{font-family:var(--serif);font-style:italic;font-size:24px;line-height:1.3}
 .btn{display:inline-flex;align-items:center;justify-content:space-between;min-height:52px;padding:0 20px;font-weight:600;font-size:15px;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--ink)}
@@ -114,6 +114,13 @@ h1,h2,h3,p{margin:0}
 .legal a{text-decoration:underline;text-underline-offset:3px}
 .legal .back{display:inline-block;margin-top:48px;font-size:14px;letter-spacing:.08em;text-transform:uppercase;font-weight:500;border-bottom:2px solid var(--gold);padding-bottom:4px;text-decoration:none}
 
+/* problem: text + body map */
+.problem-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:40px;align-items:center}
+.problem-text{display:flex;flex-direction:column;gap:18px}
+.bodymap{margin:0;display:flex;flex-direction:column;gap:10px;align-items:center}
+.bodymap img{width:100%;max-width:560px;height:auto}
+.bodymap figcaption{font-size:13px;color:var(--muted);text-align:center}
+
 /* journey figure */
 .fig{display:flex;flex-direction:column;gap:0;border:1px solid #D8D2C4;background:#FFFFFF}
 .fig-today{background:#EEEBE3;padding:24px 28px 20px;border-bottom:3px solid var(--gold)}
@@ -153,7 +160,7 @@ h1,h2,h3,p{margin:0}
   .hero-main,.hero-side{grid-column:span 12}
   .hero-side{border-left:0;padding-left:0;border-top:1px solid var(--rule);padding-top:24px}
   .chapter-label,.chapter-body{grid-column:span 12}
-  .figures,.partners{grid-template-columns:1fr}
+  .figures,.partners,.problem-split{grid-template-columns:1fr}
   .scatter,.flow{grid-template-columns:1fr;gap:18px}
   .scatter li+li::before,.scatter li+li::after,.flow::before{display:none}
   .flow li{text-align:left;align-items:flex-start;padding-left:14px}
