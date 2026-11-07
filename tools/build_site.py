@@ -161,10 +161,11 @@ index = head("HETAW — Recognise endometriosis earlier, at the first visit",
 <section class="lp-section lp-tint" id="pieces">
   <div class="wrap pz-wrap">
     <div class="pz-copy reveal">
-      <p class="lp-kicker">Wrong diagnoses first</p>
-      <h2>Three in four women are told it is something else.</h2>
-      <p class="lp-p">Irritable bowel. Cystitis. “Normal” period pain. Pelvic inflammatory disease. Stress. Appendicitis. Each label fits one fragment of the picture, each is treated on its own, and each costs months or years — until someone puts the pieces together.</p>
-      <p class="lp-p">A structured symptom history at the first visit puts them on the same table from the start.</p>
+      <p class="lp-kicker">What the delay costs</p>
+      <h2>Left unrecognised, endometriosis does not stay in the pelvis.</h2>
+      <p class="lp-p">Years without a diagnosis mean years of untreated inflammation and pain. The literature links late-recognised endometriosis to infertility, chronic pain and fatigue, depression and anxiety, bowel problems, autoimmune conditions such as Hashimoto’s thyroiditis and — when it reaches the ureters — silent loss of kidney function.</p>
+      <p class="lp-p">Not every woman develops these. But every year of delay raises the odds. Recognising the pattern at the first visit is where that changes.</p>
+      <p class="lp-source" style="text-align:left;margin:0">Associations reported in the literature (e.g. Shigesi et al. 2019, Human Reproduction Update; Gambadauro et al. 2019, AJOG). Illustration: Blausen Medical Communications, CC BY 3.0.</p>
     </div>
     <div class="pz-stage reveal delay-1">
       ''' + PUZZLE + '''

@@ -428,3 +428,13 @@ h1,h2,h3,p{margin:0}
 .reveal.in .pz-final{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.pz,.pz-final{opacity:1;transform:none;transition:none}}
 @media (max-width:960px){.pz-wrap{grid-template-columns:1fr}}
+
+/* image jigsaw variant */
+.pzi-ghost{fill:#F3EFE6;stroke:#D8D2C4;stroke-width:1.5;stroke-dasharray:4 5}
+.pzi-tint{fill:#0B1A33;opacity:.06}
+.pz-seam rect,.pz-seam circle{stroke:#FFFFFF;stroke-width:2.4;opacity:.95}
+.pzi-label rect{fill:#0B1A33;opacity:.9}
+.pzi-label text{fill:#FFFFFF;font-family:var(--sans);font-size:12.5px;font-weight:600}
+.pzi-label text.sub{font-size:10px;font-weight:500;fill:#E0B35A}
+.pz{transform-origin:300px 200px}
+.pz-final rect{fill:var(--ink)}
