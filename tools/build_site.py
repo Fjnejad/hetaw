@@ -3,6 +3,7 @@
 import pathlib, sys
 
 ROOT = pathlib.Path(sys.argv[1])
+PUZZLE = (ROOT / "assets" / "puzzle.svg").read_text(encoding="utf-8")
 MAIL = "fahrnaz@hetaw.de"
 
 def head(title, desc, path, extra=""):
@@ -154,6 +155,20 @@ index = head("HETAW — Recognise endometriosis earlier, at the first visit",
       <article class="card reveal delay-2"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M16 11a4 4 0 1 0-8 0 4 4 0 0 0 8 0z"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span><h3>510,000</h3><p>Women with a confirmed diagnosis in Germany in 2024 — more than double 2005, and still below the true number affected.</p></article>
     </div>
     <p class="lp-source reveal">Sources: Hudelist et al., Human Reproduction 2012; BARMER Arztreport 2026.</p>
+  </div>
+</section>
+
+<section class="lp-section lp-tint" id="pieces">
+  <div class="wrap pz-wrap">
+    <div class="pz-copy reveal">
+      <p class="lp-kicker">The scatter signature</p>
+      <h2>Each symptom on its own looks like something else.</h2>
+      <p class="lp-p">Pelvic pain, painful periods, bowel and bladder complaints, fatigue, difficulty conceiving — seen one at a time, by five different specialists, none of them points to endometriosis. Seen together, at the first visit, they form one picture.</p>
+      <p class="lp-p">That is what a structured symptom history does: it puts the pieces on the same table.</p>
+    </div>
+    <div class="pz-stage reveal delay-1">
+      ''' + PUZZLE + '''
+    </div>
   </div>
 </section>
 

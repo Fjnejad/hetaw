@@ -409,3 +409,23 @@ h1,h2,h3,p{margin:0}
 .what-steps strong{display:block;font-size:16px;font-weight:600;margin-bottom:3px}
 .what-steps p{font-size:14.5px;line-height:1.55;color:var(--ink-2)}
 @media (max-width:960px){.lp-split-wide{grid-template-columns:1fr}}
+
+/* ===== puzzle animation: scattered symptoms assemble into one picture ===== */
+.pz-wrap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:48px;align-items:center}
+.pz-copy{display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.pz-stage{background:#FFFFFF;border-radius:var(--r);box-shadow:var(--shadow);padding:24px;overflow:hidden}
+.pz-svg{width:100%;height:auto;display:block;overflow:visible}
+.pz-ghost path{fill:#F7F4EC;stroke:#E3DCCB;stroke-width:1.5;stroke-dasharray:4 5}
+.pz-outline{fill:none;stroke:var(--ink);stroke-width:1.6;opacity:0;transition:opacity .5s ease 1.9s}
+.pz-fill{fill:#F3E3BE}
+.pz-seam rect,.pz-seam circle{fill:none;stroke:#FFFFFF;stroke-width:3}
+.pz{transform-box:view-box;transform-origin:300px 310px;opacity:0;transform:translate(var(--dx),var(--dy)) rotate(var(--rot));transition:transform 1s cubic-bezier(.2,.75,.2,1),opacity .6s ease}
+.pz-p1{transition-delay:.05s}.pz-p2{transition-delay:.25s}.pz-p3{transition-delay:.45s}.pz-p4{transition-delay:.65s}.pz-p5{transition-delay:.85s}.pz-p6{transition-delay:1.05s}
+.pz-label rect{fill:var(--ink);opacity:.92}
+.pz-label text{fill:#FFFFFF;font-family:var(--sans);font-size:13px;font-weight:600}
+.pz-label{opacity:1;transition:opacity .5s ease}
+.reveal.in .pz{opacity:1;transform:none}
+.reveal.in .pz-outline{opacity:1}
+.reveal.in .pz-p2 .pz-fill,.reveal.in .pz-p5 .pz-fill{fill:#EFD9A6}
+@media (prefers-reduced-motion:reduce){.pz{opacity:1;transform:none;transition:none}.pz-outline{opacity:1;transition:none}}
+@media (max-width:960px){.pz-wrap{grid-template-columns:1fr}}
