@@ -471,3 +471,21 @@ h1,h2,h3,p{margin:0}
 .what-steps-row li{grid-template-columns:40px minmax(0,1fr);background:#FFFFFF;border-radius:var(--r);box-shadow:var(--shadow);padding:24px 24px 22px}
 .lp-what-wide .lp-center{margin-top:4px}
 @media (max-width:960px){.what-steps-row{grid-template-columns:1fr}}
+
+/* today's journey (the pain) above the HETAW timeline */
+.today{max-width:1040px;margin:0 auto 40px;background:#EEEAE0;border-radius:var(--r);padding:26px 28px 22px;box-shadow:inset 0 0 0 1px #E2DBCB}
+.today-head,.with-head{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin-bottom:18px}
+.with-head{max-width:820px;margin:0 auto 18px}
+.today-tag{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--muted);background:#FFFFFF;padding:6px 10px;border-radius:999px}
+.today-tag.gold{color:var(--gold-dark);background:#FBF3E1}
+.today-title{font-size:16px;font-weight:600;color:var(--ink)}
+.today-badge{margin-left:auto;background:var(--ink);color:#FFFFFF;padding:8px 12px;border-radius:10px;font-weight:700;font-size:17px;line-height:1;display:flex;flex-direction:column;align-items:center;gap:3px}
+.today-badge small{font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:500;color:#C9D0DD}
+.today-row{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:26px;position:relative}
+.today-row li{position:relative;background:#FFFFFF;border:1.5px dashed #AEB5C3;border-radius:12px;padding:12px 10px;text-align:center;display:flex;flex-direction:column;gap:3px;opacity:.95}
+.today-row li strong{font-size:14px;font-weight:600;color:var(--ink)}
+.today-row li span{font-size:12px;color:var(--muted)}
+.today-row li+li::before{content:"";position:absolute;left:-26px;top:50%;width:26px;border-top:1.5px dashed #AEB5C3}
+.today-row li+li::after{content:"";position:absolute;left:-8px;top:50%;width:6px;height:6px;border-top:1.5px dashed #AEB5C3;border-right:1.5px dashed #AEB5C3;transform:translateY(-50%) rotate(45deg)}
+.today-loop{margin:14px 0 0;font-size:13px;color:var(--muted);font-style:italic}
+@media (max-width:960px){.today-row{grid-template-columns:1fr;gap:14px}.today-row li+li::before,.today-row li+li::after{display:none}.today-badge{margin-left:0}}
