@@ -114,12 +114,30 @@ h1,h2,h3,p{margin:0}
 .legal a{text-decoration:underline;text-underline-offset:3px}
 .legal .back{display:inline-block;margin-top:48px;font-size:14px;letter-spacing:.08em;text-transform:uppercase;font-weight:500;border-bottom:2px solid var(--gold);padding-bottom:4px;text-decoration:none}
 
+/* journeys */
+.journeys{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px}
+.journey{border-top:1px solid var(--rule);padding-top:18px}
+.journey-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:18px}
+.journey-tag{font-family:var(--serif);font-size:26px;font-weight:600}
+.journey-time{font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--muted)}
+.journey-hetaw .journey-time{color:var(--gold-dark)}
+.journey-steps{list-style:none;margin:0;padding:0;counter-reset:j}
+.journey-steps li{counter-increment:j;position:relative;padding:14px 0 14px 44px;border-top:1px solid #D8D2C4;display:flex;flex-direction:column;gap:4px}
+.journey-steps li:first-child{border-top:0}
+.journey-steps li::before{content:counter(j);position:absolute;left:0;top:14px;width:28px;height:28px;border-radius:50%;border:1px solid var(--ink);font-family:var(--serif);font-size:15px;font-weight:600;display:flex;align-items:center;justify-content:center;color:var(--ink);background:var(--paper)}
+.journey-now .journey-steps li::before{border-color:var(--muted);color:var(--muted)}
+.journey-hetaw .journey-steps li::before{background:var(--ink);color:var(--gold);border-color:var(--ink)}
+.journey-steps strong{font-size:17px;font-weight:600}
+.journey-steps span{font-size:15px;line-height:1.55;color:var(--ink-2)}
+.journey-now .journey-steps span{color:var(--muted)}
+.journey-note{font-size:13px;line-height:1.5;color:var(--muted);max-width:720px}
+
 /* responsive */
 @media (max-width:960px){
   .hero-main,.hero-side{grid-column:span 12}
   .hero-side{border-left:0;padding-left:0;border-top:1px solid var(--rule);padding-top:24px}
   .chapter-label,.chapter-body{grid-column:span 12}
-  .figures,.partners{grid-template-columns:1fr}
+  .figures,.partners,.journeys{grid-template-columns:1fr}
   .audience{grid-template-columns:1fr}
 }
 @media (max-width:600px){
