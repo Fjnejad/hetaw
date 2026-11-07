@@ -118,8 +118,9 @@ h1,h2,h3,p{margin:0}
 .problem-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:40px;align-items:center}
 .problem-text{display:flex;flex-direction:column;gap:18px}
 .bodymap{margin:0;display:flex;flex-direction:column;gap:10px;align-items:center}
-.bodymap img{width:100%;max-width:560px;height:auto}
-.bodymap figcaption{font-size:13px;color:var(--muted);text-align:center}
+.bodymap img{width:100%;max-width:560px;height:auto;background:#FFFFFF;border:1px solid #E3DED2}
+.bodymap figcaption{font-size:12.5px;line-height:1.5;color:var(--muted);text-align:center;max-width:560px}
+.bodymap figcaption a{text-decoration:underline;text-underline-offset:2px}
 
 /* journey figure */
 .fig{display:flex;flex-direction:column;gap:0;border:1px solid #D8D2C4;background:#FFFFFF}
