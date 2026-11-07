@@ -4,7 +4,7 @@ Website of HETAW — decision support for earlier endometriosis recognition at t
 
 Static site, no build step: `index.html`, `impressum.html`, `datenschutz.html`, `assets/` (CSS, self-hosted fonts, logo).
 
-Hosted on Netlify; the `main` branch is deployed automatically. Domain DNS is at INWX.
+Hosted on Cloudflare Pages; the `main` branch is deployed automatically. DNS zone at Cloudflare, domain registered at INWX.
 
 ## Pages
 
