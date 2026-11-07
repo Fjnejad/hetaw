@@ -452,3 +452,12 @@ h1,h2,h3,p{margin:0}
 .jg-legend i{width:14px;height:14px;border-radius:4px;display:inline-block}
 .jg-legend .k1{background:#0B1A33}.jg-legend .k2{background:#FFFFFF;border:1.2px dashed #9AA3B5}
 @media (prefers-reduced-motion:reduce){.jg-chip{opacity:1;transform:none;transition:none}}
+
+/* animated jigsaw: real piece outlines */
+.jg-ghost{fill:#F6F2EA;stroke:#DDD6C7;stroke-width:1.2;stroke-dasharray:4 5}
+.jg-svg{overflow:visible;border-radius:0}
+.jp{transform-box:view-box;transform-origin:50% 50%;opacity:0;transform:translate(var(--dx),var(--dy)) rotate(var(--rot)) scale(1.04);transition:transform .95s cubic-bezier(.2,.75,.2,1),opacity .5s ease;transition-delay:calc(var(--i) * .11s)}
+.reveal.in .jp{opacity:1;transform:none}
+.jp .jg-chip{opacity:0;transition:opacity .4s ease;transition-delay:calc(1.9s + var(--i) * .06s)}
+.reveal.in .jp .jg-chip{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.jp,.jp .jg-chip{opacity:1;transform:none;transition:none}}
