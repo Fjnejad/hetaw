@@ -22,7 +22,7 @@ def head(title, desc, path, extra=""):
 <meta name="theme-color" content="#0B1A33">
 <link rel="icon" type="image/png" href="assets/favicon.png?v=2">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/style.css?v=20261108f">{extra}
+<link rel="stylesheet" href="assets/style.css?v=20261108g">{extra}
 </head>
 <body>
 '''
@@ -70,8 +70,8 @@ def contact(heading, intro=None, cards=True):
       <div class="foot-brand">
         <img src="assets/hetaw-icon.png" alt="" width="72" height="72">
         <div>
-          <span class="brand-small"><b>HETAW</b><span>· Berlin</span></span>
-          <p class="disclaimer">HETAW is a decision-support tool in development. It does not diagnose and is not yet available for clinical use.</p>
+          <span class="brand-small"><b>HETAW<sup class="tm">™</sup></b><span>· Berlin</span></span>
+          <p class="disclaimer">HETAW is a decision-support tool in development. It does not diagnose and is not yet available for clinical use. HETAW™ is an EU trade mark application (EUIPO No. 019447062).</p>
         </div>
       </div>
       <nav aria-label="Legal"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav>
@@ -80,7 +80,7 @@ def contact(heading, intro=None, cards=True):
 </section>
 
 </main>
-<script src="assets/motion.js?v=20261108f" defer></script>
+<script src="assets/motion.js?v=20261108g" defer></script>
 </body>
 </html>
 '''
@@ -466,7 +466,7 @@ about = head("About HETAW", "HETAW is a pre-incorporation digital-health venture
     <p class="chapter-label">The name</p>
     <div class="chapter-body">
       <h2>Health · Earlier · Through · Awareness</h2>
-      <p class="text">HETAW stands for what the product is meant to do: bring health earlier, by making a pattern visible that today goes unseen. The eclipse in the logo is the disease hidden behind everyday complaints; the line that follows is the moment it is recognised.</p>
+      <p class="text">HETAW™ stands for what the product is meant to do: bring health earlier, by making a pattern visible that today goes unseen. The eclipse in the logo is the disease hidden behind everyday complaints; the line that follows is the moment it is recognised.</p>
     </div>
   </div>
 </section>

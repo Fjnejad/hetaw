@@ -138,6 +138,7 @@ html{scroll-padding-top:88px}
 .footer .foot-brand>div{display:flex;flex-direction:column;justify-content:center;gap:6px;min-width:0}
 .footer .brand-small{display:flex;align-items:center;gap:10px}
 .footer .brand-small b{font-family:var(--serif);font-size:18px;font-weight:600;letter-spacing:.2em;color:var(--on-dark)}
+.footer .brand-small .tm{font-family:var(--sans);font-size:9px;letter-spacing:0;vertical-align:top;margin-left:-.1em;opacity:.8}
 .footer nav{display:flex;flex-wrap:wrap;gap:8px 28px}
 .footer nav a{color:var(--on-dark-2);padding:8px 0}
 .footer .disclaimer{margin:0;font-size:13px;line-height:1.5;color:#7F8CA6}
