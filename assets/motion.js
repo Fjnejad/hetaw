@@ -33,3 +33,5 @@
   }, { threshold: 0.6 });
   nums.forEach(function (n) { io2.observe(n); });
 })();
+
+(function(){var h=document.querySelector(".masthead");if(!h)return;var f=function(){h.classList.toggle("scrolled",window.scrollY>8)};f();addEventListener("scroll",f,{passive:true})})();

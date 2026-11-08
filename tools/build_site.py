@@ -22,7 +22,7 @@ def head(title, desc, path, extra=""):
 <meta name="theme-color" content="#0B1A33">
 <link rel="icon" type="image/png" href="assets/favicon.png?v=2">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/style.css?v=20261108a">{extra}
+<link rel="stylesheet" href="assets/style.css?v=20261108b">{extra}
 </head>
 <body>
 '''
@@ -75,7 +75,7 @@ def contact(heading, intro=None, cards=True):
 </section>
 
 </main>
-<script src="assets/motion.js?v=20261108a" defer></script>
+<script src="assets/motion.js?v=20261108b" defer></script>
 </body>
 </html>
 '''
