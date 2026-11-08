@@ -22,7 +22,7 @@ def head(title, desc, path, extra=""):
 <meta name="theme-color" content="#0B1A33">
 <link rel="icon" type="image/png" href="assets/favicon.png?v=2">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/style.css?v=20261108c">{extra}
+<link rel="stylesheet" href="assets/style.css?v=20261108d">{extra}
 </head>
 <body>
 '''
@@ -67,15 +67,20 @@ def contact(heading, intro=None, cards=True):
   </div>
   <footer class="footer">
     <div class="wrap">
-      <span class="brand-small"><img src="assets/hetaw-icon.png" alt="" width="56" height="56"><b>HETAW</b><span>· Berlin</span></span>
+      <div class="foot-brand">
+        <img src="assets/hetaw-icon.png" alt="" width="72" height="72">
+        <div>
+          <span class="brand-small"><b>HETAW</b><span>· Berlin</span></span>
+          <p class="disclaimer">HETAW is a decision-support tool in development. It does not diagnose and is not yet available for clinical use.</p>
+        </div>
+      </div>
       <nav aria-label="Legal"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav>
-      <p class="disclaimer">HETAW is a decision-support tool in development. It does not diagnose and is not yet available for clinical use.</p>
     </div>
   </footer>
 </section>
 
 </main>
-<script src="assets/motion.js?v=20261108c" defer></script>
+<script src="assets/motion.js?v=20261108d" defer></script>
 </body>
 </html>
 '''
