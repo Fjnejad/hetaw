@@ -13,7 +13,7 @@
 <meta name="theme-color" content="#0B1A33">
 <link rel="icon" type="image/png" href="assets/favicon.png?v=2">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/style.css?v=20261108i">
+<link rel="stylesheet" href="assets/style.css?v=20261108j">
 </head>
 <body>
 <header class="masthead">
@@ -34,70 +34,76 @@
 
 <main id="top">
 
-<section class="page-hero">
+<section class="lp-hero sub-hero">
   <div class="wrap">
-    <p class="kicker">How it works</p>
-    <h1>Three minutes at the first visit. One interpretable score.</h1>
-    <p class="lede">HETAW is a decision-support app for GPs and gynaecologists. It does not diagnose and does not use insurer data: everything it scores is entered by the doctor in the consultation.</p>
-  </div>
-</section>
-
-<section class="chapter" id="problem">
-  <div class="wrap">
-    <p class="chapter-label">The problem</p>
-    <div class="chapter-body">
-      <h2>Endometriosis presents as scattered complaints across several specialties. Each visit sees one piece.</h2>
-      <div class="problem-split">
-        <div class="problem-text">
-          <p class="text">Endometriosis is tissue similar to the uterine lining growing outside the uterus — on the ovaries, the bowel, the bladder, the peritoneum, sometimes the diaphragm or nerves. Because the lesions are spread through the body, so are the symptoms. A woman sees one doctor per complaint, and nobody connects the fragments.</p>
-          <p class="text">The first consultation is where the pattern is most often missed, and where it could most easily be caught.</p>
-        </div>
-        <figure class="bodymap">
-          <img src="assets/endometriosis-blausen.jpg" alt="Medical illustration of endometriosis: uterus, fallopian tubes and ovaries with endometriosis lesions on the ovaries, the outer uterine wall and surrounding tissue; a small body outline shows the location of the pelvis" width="1400" height="930" loading="lazy">
-          <figcaption>Endometriosis: tissue similar to the uterine lining growing on the ovaries, tubes, peritoneum and neighbouring organs. Illustration: Blausen Medical Communications, <a href="https://commons.wikimedia.org/wiki/File:Blausen_0349_Endometriosis.png" rel="noopener">Blausen 0349 Endometriosis</a>, <a href="https://creativecommons.org/licenses/by/3.0/" rel="noopener">CC BY 3.0</a>, via Wikimedia Commons.</figcaption>
-        </figure>
-      </div>
-      <div class="figures">
-        <div class="figure"><span class="num">10<small> yrs</small></span><span class="label">Median diagnostic delay</span><span class="note">From first symptoms to confirmed diagnosis</span></div>
-        <div class="figure"><span class="num">74<small> %</small></span><span class="label">Receive a wrong diagnosis first</span><span class="note">At least one misdiagnosis before endometriosis is named</span></div>
-        <div class="figure"><span class="num">510<small> k</small></span><span class="label">Confirmed cases in Germany</span><span class="note">BARMER Arztreport 2026 — many more undiagnosed</span></div>
-      </div>
+    <div class="lp-hero-copy reveal">
+      <p class="lp-kicker">How it works</p>
+      <h1>Three minutes at the first visit. One interpretable score.</h1>
+      <p class="lp-lede">HETAW is a decision-support app for GPs and gynaecologists. It does not diagnose and does not use insurer data: everything it scores is entered by the doctor in the consultation.</p>
+      <div class="lp-actions"><a class="pill pill-solid" href="mailto:fahrnaz@hetaw.de?subject=HETAW%20early-access%20list%20%E2%80%94%20practice&body=Hello%20Fahrnaz%2C%0A%0AI%20would%20like%20to%20join%20the%20HETAW%20early-access%20list.%0A%0APractice%20/%20specialty%3A%0ACity%3A%0AWhat%20would%20make%20a%20first-visit%20tool%20workable%20for%20us%3A%0A%0ABest%20regards%2C%0A">Join the pilot list</a><a class="pill pill-ghost" href="#method">See the method</a></div>
+      <p class="lp-status">In validation · Not yet available for clinical use</p>
     </div>
   </div>
 </section>
 
-<section class="chapter" id="method">
+<section class="lp-section" id="problem">
   <div class="wrap">
-    <p class="chapter-label">The method</p>
-    <div class="chapter-body">
-      <h2>A structured history in, a score with reasons out.</h2>
-      <div class="steps">
-        <div class="step"><span class="roman">i.</span><div><h3>The doctor enters a short symptom history</h3><p>A defined set of questions on pain pattern, cycle, digestive, urinary and fatigue symptoms, reproductive history and prior consultations — designed to be asked in two to three minutes and to capture the fragments that today go unconnected.</p></div></div>
-        <div class="step"><span class="roman">ii.</span><div><h3>HETAW returns a risk score with its reasons</h3><p>A calibrated pre-test risk score and the symptom patterns that drove it, in plain language: which answers raised the score, which lowered it, and how confident the estimate is.</p></div></div>
-        <div class="step"><span class="roman">iii.</span><div><h3>The doctor decides</h3><p>Watch and re-evaluate, order ultrasound or blood work, or refer to a certified endometriosis centre. HETAW supports the decision; it never makes it, and it does not diagnose.</p></div></div>
-      </div>
-      <h3 class="subhead">Three design principles</h3>
-      <div class="principles">
-        <div><strong>The doctor stays in charge.</strong><p>HETAW does not diagnose and does not communicate with the patient. It gives the doctor a structured, defensible basis for a decision he or she makes anyway.</p></div>
-        <div><strong>Everything scored is entered by the doctor.</strong><p>No insurer, claims or electronic-record data. Consent stays inside the consultation, and the tool runs in any practice without an IT integration project.</p></div>
-        <div><strong>Explainable by design.</strong><p>An interpretable model class, per-patient reasons, calibrated probabilities and a published model card — requirements of the Medical Device Regulation and the EU AI Act, treated as product features.</p></div>
-      </div>
+    <div class="lp-head reveal">
+      <p class="lp-kicker">The problem</p>
+      <h2>Scattered complaints, one disease, nobody connecting them</h2>
+      <p>Endometriosis is tissue similar to the uterine lining growing outside the uterus — on the ovaries, the bowel, the bladder, the peritoneum, sometimes the diaphragm or nerves. Because the lesions are spread through the body, so are the symptoms. A woman sees one doctor per complaint. The first consultation is where the pattern is most often missed — and where it could most easily be caught.</p>
+    </div>
+    <div class="cards cards-3">
+      <article class="card reveal"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><h3>10 years</h3><p>Median delay from first symptoms to diagnosis in Germany and Austria — 7.7 of them after the first gynaecologist visit.</p></article>
+      <article class="card reveal delay-1"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17h.01"/></svg></span><h3>74 %</h3><p>Receive at least one wrong diagnosis first — irritable bowel, cystitis, "stress" — before endometriosis is named.</p></article>
+      <article class="card reveal delay-2"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M16 11a4 4 0 1 0-8 0 4 4 0 0 0 8 0z"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span><h3>510,000</h3><p>Women with a confirmed diagnosis in Germany in 2024 — more than double 2005, and still below the true number affected.</p></article>
+    </div>
+    <p class="lp-source reveal">Sources: Hudelist et al., Human Reproduction 2012; BARMER Arztreport 2026.</p>
+  </div>
+</section>
+
+<section class="lp-section lp-tint" id="method">
+  <div class="wrap">
+    <div class="lp-head reveal">
+      <p class="lp-kicker">The method</p>
+      <h2>A structured history in. A score with reasons out.</h2>
+    </div>
+    <ol class="what-steps what-steps-row reveal delay-1">
+      <li><span>i.</span><div><strong>The doctor enters a short symptom history</strong><p>Pain pattern, cycle, digestive, urinary and fatigue symptoms, reproductive history, prior consultations — designed for two to three minutes and to capture the fragments that today go unconnected.</p></div></li>
+      <li><span>ii.</span><div><strong>HETAW returns a risk score with its reasons</strong><p>A calibrated pre-test risk score and the symptom patterns that drove it, in plain language: which answers raised it, which lowered it, how confident the estimate is.</p></div></li>
+      <li><span>iii.</span><div><strong>The doctor decides</strong><p>Watch and re-evaluate, order ultrasound or blood work, or refer to a certified endometriosis centre. HETAW supports the decision; it never makes it, and it does not diagnose.</p></div></li>
+    </ol>
+    <div class="lp-head reveal" style="margin-top:56px"><h2 class="h2-small">Three design principles</h2><p>What separates HETAW from a symptom checker.</p></div>
+    <div class="cards cards-3">
+      <article class="card reveal"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3a5 5 0 0 1 5 5v2a5 5 0 0 1-10 0V8a5 5 0 0 1 5-5z"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span><h3>The doctor stays in charge</h3><p>HETAW does not diagnose and does not communicate with the patient. It gives the doctor a structured, defensible basis for a decision he or she makes anyway.</p></article>
+      <article class="card reveal delay-1"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h8M8 17h5"/></svg></span><h3>Everything scored is entered by the doctor</h3><p>No insurer, claims or electronic-record data. Consent stays inside the consultation, and the tool runs in any practice without an IT integration project.</p></article>
+      <article class="card reveal delay-2"><span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5-4.9-2.6-4.9 2.6.9-5.5-4-3.9L9.5 8z"/></svg></span><h3>Explainable by design</h3><p>An interpretable model class, per-patient reasons, calibrated probabilities and a published model card — requirements of the MDR and the EU AI Act, treated as product features.</p></article>
     </div>
   </div>
 </section>
 
-<section class="chapter dark" id="research">
-  <div class="wrap">
-    <p class="chapter-label">Research &amp; validation</p>
-    <div class="chapter-body">
-      <h2>Validated before it is used.</h2>
-      <p class="text">HETAW is being developed as research first. The symptom question set is built from published evidence and clinical review, then evaluated on retrospective data from certified endometriosis centres before any practice uses it. Results are published openly.</p>
-      <div class="roadmap">
-        <div class="roadmap-row now"><span class="when">Now</span><div><div class="what">First-visit symptom triage</div><div class="how">Question set development and retrospective validation with endometriosis centres</div></div></div>
-        <div class="roadmap-row"><span class="when">Next</span><div><div class="what">After the work-up</div><div class="how">Combining routine labs, ultrasound and MRI findings into a post-test likelihood</div></div></div>
-        <div class="roadmap-row"><span class="when">Later</span><div><div class="what">Care-pathway integration</div><div class="how">Pilot within a selective-care contract; CE marking as a medical device (Class IIa planned)</div></div></div>
-      </div>
+<section class="lp-band" aria-label="Key facts">
+  <div class="wrap stats">
+    <div class="reveal"><strong data-count="10.4" data-suffix=" yrs">10.4 yrs</strong><span>median diagnostic delay</span></div>
+    <div class="reveal delay-1"><strong data-count="74" data-suffix=" %">74 %</strong><span>misdiagnosed at least once</span></div>
+    <div class="reveal delay-2"><strong data-count="3" data-suffix=" min">3 min</strong><span>structured history per patient</span></div>
+    <div class="reveal delay-3"><strong data-count="0">0</strong><span>insurer or record data used</span></div>
+  </div>
+</section>
+
+<section class="lp-section" id="research">
+  <div class="wrap lp-split">
+    <div class="reveal">
+      <p class="lp-kicker">Research &amp; validation</p>
+      <h2>Validated before it is used</h2>
+      <p class="lp-p">HETAW is developed as research first. The question set is built from published evidence and clinical review, then evaluated on retrospective data from certified endometriosis centres before any practice uses it. Results are published openly.</p>
+      <a class="pill pill-outline" href="for-partners.html">Validation partners</a>
     </div>
+    <ol class="tl tl-compact">
+      <li class="reveal"><span class="tl-n gold">Now</span><div class="card tl-card tl-key"><h3>First-visit symptom triage</h3><p>Question set development and retrospective validation with endometriosis centres.</p></div></li>
+      <li class="reveal delay-1"><span class="tl-n">Next</span><div class="card tl-card"><h3>After the work-up</h3><p>Combining routine labs, ultrasound and MRI findings into a post-test likelihood.</p></div></li>
+      <li class="reveal delay-2"><span class="tl-n">Later</span><div class="card tl-card"><h3>Care-pathway integration</h3><p>Pilot within a selective-care contract; CE marking as a medical device (Class IIa planned).</p></div></li>
+    </ol>
   </div>
 </section>
 
@@ -107,7 +113,7 @@
       <div>
         <p class="overline light">What you can do now</p>
         <h2>Help us validate it — three concrete ways.</h2>
-      <p class="text">Centres with retrospective cohorts, clinicians who will review the question set, insurers who want measurable earlier recognition — write to us.</p>
+      <p class="text">Centres with retrospective cohorts, clinicians who will review the question set, insurers who want measurable earlier recognition.</p>
         <p class="cta-next">Each button opens a short pre-addressed email. You will hear back within two working days with a proposal for a 20-minute call. Or write directly: <a class="mail" href="mailto:fahrnaz@hetaw.de">fahrnaz@hetaw.de</a></p>
       </div>
       <div class="cta-cards">
@@ -132,6 +138,6 @@
 </section>
 
 </main>
-<script src="assets/motion.js?v=20261108i" defer></script>
+<script src="assets/motion.js?v=20261108j" defer></script>
 </body>
 </html>

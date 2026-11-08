@@ -526,3 +526,15 @@ html{scroll-padding-top:88px}
 .pz-h3{font-family:var(--serif);font-weight:500;font-size:clamp(24px,2.6vw,32px);line-height:1.15;margin:0 0 12px}
 .h2-small{font-size:clamp(26px,3vw,34px)!important}
 .lp-textlink{margin:16px 0 0;font-size:15px;color:var(--muted)}
+
+/* subpages in the landing idiom (8 Nov) */
+.sub-hero .wrap{padding-top:72px;padding-bottom:64px;max-width:1200px}
+.sub-hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(32px,4vw,50px);line-height:1.1;max-width:860px;margin:10px 0 18px}
+.sub-hero .lp-lede{max-width:720px}
+.cards-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.lp-chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;justify-content:center}
+.lp-chips span{font-size:13px;font-weight:600;letter-spacing:.02em;color:var(--ink);background:#FFFFFF;border:1px solid rgba(11,31,59,.1);border-radius:999px;padding:8px 14px}
+.founder-photo{margin:0;justify-self:center}
+.founder-photo img{width:220px;height:auto;border-radius:18px;box-shadow:var(--shadow)}
+#name .lp-brandband{margin-top:40px;border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+@media (max-width:760px){.cards-2{grid-template-columns:1fr}}
