@@ -22,7 +22,7 @@ def head(title, desc, path, extra=""):
 <meta name="theme-color" content="#0B1A33">
 <link rel="icon" type="image/png" href="assets/favicon.png?v=2">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/style.css?v=20261108g">{extra}
+<link rel="stylesheet" href="assets/style.css?v=20261108h">{extra}
 </head>
 <body>
 '''
@@ -39,7 +39,7 @@ def masthead(current):
       <span>HETAW</span>
     </a>
     <nav class="nav" aria-label="Main">
-      {links}<a class="cta" href="#contact">Contact</a>
+      {links}<a class="cta" href="#contact">Get in touch</a>
     </nav>
   </div>
 </header>
@@ -48,20 +48,23 @@ def masthead(current):
 '''
 
 def contact(heading, intro=None, cards=True):
-    cards_html = '''      <div class="partners partners-side">
-        <div><h3>Endometriosis centres</h3><p>Retrospective validation on your data, joint publication, clinical review of the question set.</p></div>
-        <div><h3>GPs and gynaecologists</h3><p>Tell us what would make a first-visit tool workable in your practice. Early-access list for the pilot.</p></div>
-        <div><h3>Krankenkassen</h3><p>Validation cooperation (§68a SGB V) leading to a selective-care pilot (§140a SGB V).</p></div>
+    cards_html = '''      <div class="cta-cards">
+        <div class="cta-card"><p class="cta-who">GPs and gynaecologists</p><h3>Join the early-access list</h3><p>Tell us what a first-visit tool must look like to work in your practice. Practices on the list are invited to the pilot first.</p><a class="pill pill-gold" href="mailto:fahrnaz@hetaw.de?subject=HETAW%20early-access%20list%20%E2%80%94%20practice&body=Hello%20Fahrnaz%2C%0A%0AI%20would%20like%20to%20join%20the%20HETAW%20early-access%20list.%0A%0APractice%20/%20specialty%3A%0ACity%3A%0AWhat%20would%20make%20a%20first-visit%20tool%20workable%20for%20us%3A%0A%0ABest%20regards%2C%0A">Join the list</a></div>
+        <div class="cta-card"><p class="cta-who">Endometriosis centres</p><h3>Validate HETAW on your data</h3><p>Retrospective validation on your cohort, clinical review of the question set, joint publication.</p><a class="pill pill-gold" href="mailto:fahrnaz@hetaw.de?subject=HETAW%20validation%20partnership%20%E2%80%94%20centre&body=Hello%20Fahrnaz%2C%0A%0AWe%20are%20interested%20in%20a%20validation%20partnership.%0A%0AInstitution%3A%0ARetrospective%20cohort%20%28approx.%20size%2C%20years%29%3A%0AContact%20for%20a%20first%20call%3A%0A%0ABest%20regards%2C%0A">Propose a validation partnership</a></div>
+        <div class="cta-card"><p class="cta-who">Krankenkassen</p><h3>Start a validation cooperation</h3><p>A §68a SGB V cooperation leading to a selective-care pilot (§140a) with outcomes measurable against claims data.</p><a class="pill pill-gold" href="mailto:fahrnaz@hetaw.de?subject=HETAW%20validation%20cooperation%20%E2%80%94%20insurer&body=Hello%20Fahrnaz%2C%0A%0AWe%20would%20like%20to%20discuss%20a%20validation%20cooperation%20%28%C2%A768a%20SGB%20V%29.%0A%0AInsurer%20/%20department%3A%0AContact%20for%20a%20first%20call%3A%0A%0ABest%20regards%2C%0A">Request a first call</a></div>
       </div>
-''' if cards else ""
+''' if cards else '''      <div class="cta-cards cta-cards-1">
+        <div class="cta-card"><a class="pill pill-gold" href="{CTA_SINGLE}">{CTA_LABEL}</a></div>
+      </div>
+'''
     intro_html = f'      <p class="text">{intro}</p>\n' if intro else ""
     return f'''<section class="flow-contact" id="contact">
   <div class="wrap">
     <div class="contact-grid">
       <div>
-        <p class="overline light">Work with us</p>
+        <p class="overline light">What you can do now</p>
         <h2>{heading}</h2>
-{intro_html}        <a class="mail" href="mailto:{MAIL}">{MAIL}</a>
+{intro_html}        <p class="cta-next">Each button opens a short pre-addressed email. You will hear back within two working days with a proposal for a 20-minute call. Or write directly: <a class="mail" href="mailto:{MAIL}">{MAIL}</a></p>
       </div>
 {cards_html}    </div>
   </div>
@@ -80,7 +83,7 @@ def contact(heading, intro=None, cards=True):
 </section>
 
 </main>
-<script src="assets/motion.js?v=20261108g" defer></script>
+<script src="assets/motion.js?v=20261108h" defer></script>
 </body>
 </html>
 '''
@@ -136,9 +139,10 @@ index = head("HETAW — Recognise endometriosis earlier, at the first visit",
       <h1>Endometriosis is found <span class="hl">ten years</span> too late.</h1>
       <p class="lp-lede">At the first visit, the doctor enters a short structured symptom history. HETAW returns an interpretable risk score with the reasons behind it. The doctor decides whether to investigate or refer.</p>
       <div class="lp-actions">
-        <a class="pill pill-solid" href="how-it-works.html">How it works</a>
-        <a class="pill pill-ghost" href="#contact">Work with us</a>
+        <a class="pill pill-solid" href="mailto:fahrnaz@hetaw.de?subject=HETAW%20early-access%20list%20%E2%80%94%20practice&body=Hello%20Fahrnaz%2C%0A%0AI%20would%20like%20to%20join%20the%20HETAW%20early-access%20list.%0A%0APractice%20/%20specialty%3A%0ACity%3A%0AWhat%20would%20make%20a%20first-visit%20tool%20workable%20for%20us%3A%0A%0ABest%20regards%2C%0A">Join the pilot list <small>GPs &amp; gynaecologists</small></a>
+        <a class="pill pill-ghost" href="mailto:fahrnaz@hetaw.de?subject=HETAW%20validation%20partnership%20%E2%80%94%20centre&body=Hello%20Fahrnaz%2C%0A%0AWe%20are%20interested%20in%20a%20validation%20partnership.%0A%0AInstitution%3A%0ARetrospective%20cohort%20%28approx.%20size%2C%20years%29%3A%0AContact%20for%20a%20first%20call%3A%0A%0ABest%20regards%2C%0A">Partner on validation <small>Centres &amp; insurers</small></a>
       </div>
+      <p class="lp-textlink"><a href="how-it-works.html">See how it works in a consultation →</a></p>
       <p class="lp-status">In validation · Not yet available for clinical use</p>
     </div>
     <figure class="lp-hero-visual reveal delay-2">
@@ -265,6 +269,13 @@ index = head("HETAW — Recognise endometriosis earlier, at the first visit",
   </div>
 </section>
 
+<section class="cta-band reveal">
+  <div class="wrap cta-band-grid">
+    <div><p class="overline">For practices</p><h2>See HETAW in a first visit before anyone else.</h2><p>Join the early-access list: no commitment, and your feedback shapes the pilot.</p></div>
+    <a class="pill pill-solid" href="mailto:fahrnaz@hetaw.de?subject=HETAW%20early-access%20list%20%E2%80%94%20practice&body=Hello%20Fahrnaz%2C%0A%0AI%20would%20like%20to%20join%20the%20HETAW%20early-access%20list.%0A%0APractice%20/%20specialty%3A%0ACity%3A%0AWhat%20would%20make%20a%20first-visit%20tool%20workable%20for%20us%3A%0A%0ABest%20regards%2C%0A">Join the pilot list</a>
+  </div>
+</section>
+
 <section class="lp-section" id="research">
   <div class="wrap lp-split">
     <div class="reveal">
@@ -287,7 +298,7 @@ index = head("HETAW — Recognise endometriosis earlier, at the first visit",
   </div>
 </section>
 
-''' + contact("We are looking for partners in three places.")
+''' + contact("Three ways to work with HETAW now.")
 
 # ---------------------------------------------------------------- how it works
 how = head("How HETAW works — the problem, the method, the validation",
@@ -351,7 +362,7 @@ how = head("How HETAW works — the problem, the method, the validation",
   </div>
 </section>
 
-''' + contact("Help us validate it.", "Centres with retrospective cohorts, clinicians who will review the question set, insurers who want measurable earlier recognition — write to us.")
+''' + contact("Help us validate it — three concrete ways.", "Centres with retrospective cohorts, clinicians who will review the question set, insurers who want measurable earlier recognition — write to us.")
 
 # ---------------------------------------------------------------- for practices
 practices = head("HETAW for GPs and gynaecology practices",
@@ -397,7 +408,7 @@ practices = head("HETAW for GPs and gynaecology practices",
   </div>
 </section>
 
-''' + contact("Join the early-access list.", "Tell us what would make a first-visit tool workable in your practice — how much time it can take, who completes the history, how it should be paid for. Practices on the list are the first to be invited to the pilot.", cards=False)
+''' + contact("Join the early-access list.", "Tell us what would make a first-visit tool workable in your practice — how much time it can take, who completes the history, how it should be paid for. Practices on the list are the first to be invited to the pilot.", cards=False).replace("{CTA_SINGLE}","mailto:fahrnaz@hetaw.de?subject=HETAW%20early-access%20list%20%E2%80%94%20practice&body=Hello%20Fahrnaz%2C%0A%0AI%20would%20like%20to%20join%20the%20HETAW%20early-access%20list.%0A%0APractice%20/%20specialty%3A%0ACity%3A%0AWhat%20would%20make%20a%20first-visit%20tool%20workable%20for%20us%3A%0A%0ABest%20regards%2C%0A").replace("{CTA_LABEL}","Join the early-access list")
 
 # ---------------------------------------------------------------- for partners
 partners = head("HETAW for endometriosis centres, insurers and research partners",
@@ -439,7 +450,7 @@ partners = head("HETAW for endometriosis centres, insurers and research partners
   </div>
 </section>
 
-''' + contact("We are looking for partners in three places.")
+''' + contact("Three ways to work with HETAW now.")
 
 # ---------------------------------------------------------------- about
 about = head("About HETAW", "HETAW is a pre-incorporation digital-health venture in Berlin, founded by data scientist Fahrnaz Jayrannejad.",
@@ -471,7 +482,7 @@ about = head("About HETAW", "HETAW is a pre-incorporation digital-health venture
   </div>
 </section>
 
-''' + contact("Get in touch.", cards=False)
+''' + contact("Get in touch.", cards=False).replace("{CTA_SINGLE}","mailto:fahrnaz@hetaw.de?subject=HETAW%20%E2%80%94%20enquiry&body=Hello%20Fahrnaz%2C%0A%0A").replace("{CTA_LABEL}","Write to Fahrnaz")
 
 for name, html in [("index.html", index), ("how-it-works.html", how), ("for-practices.html", practices),
                    ("for-partners.html", partners), ("about.html", about)]:

@@ -498,3 +498,25 @@ html{scroll-padding-top:88px}
 .today-row li+li::after{content:"";position:absolute;left:-8px;top:50%;width:6px;height:6px;border-top:1.5px dashed #AEB5C3;border-right:1.5px dashed #AEB5C3;transform:translateY(-50%) rotate(45deg)}
 .today-loop{margin:14px 0 0;font-size:13px;color:var(--muted);font-style:italic}
 @media (max-width:960px){.today-row{grid-template-columns:1fr;gap:14px}.today-row li+li::before,.today-row li+li::after{display:none}.today-badge{margin-left:0}}
+
+/* calls to action (8 Nov) */
+.pill small{display:block;font-size:11px;font-weight:500;letter-spacing:.04em;opacity:.75;margin-top:1px;line-height:1.1}
+.lp-actions .pill{flex-direction:column;align-items:flex-start;padding:10px 24px;min-height:56px;text-align:left}
+.lp-textlink{margin:14px 0 0;font-size:15px}
+.lp-textlink a{color:var(--ink);border-bottom:1px solid var(--gold)}
+.pill-gold{background:var(--gold);color:#1B2A41;box-shadow:0 8px 22px rgba(201,151,43,.25)}
+.pill-gold:hover{background:#D9AC3C;color:#1B2A41;transform:translateY(-1px)}
+.cta-band{background:linear-gradient(135deg,#FBF3E1,#F7F4EC);border-top:1px solid rgba(11,31,59,.06);border-bottom:1px solid rgba(11,31,59,.06)}
+.cta-band-grid{display:flex;align-items:center;justify-content:space-between;gap:32px;padding-top:56px;padding-bottom:56px}
+.cta-band h2{font-family:var(--serif);font-weight:500;font-size:clamp(26px,3vw,36px);line-height:1.15;margin:4px 0 8px}
+.cta-band p{color:var(--muted);max-width:60ch}
+.cta-cards{display:grid;grid-template-columns:1fr;gap:16px}
+.cta-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:22px 24px;display:flex;flex-direction:column;gap:8px}
+.cta-card .cta-who{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-weight:700;margin:0}
+.cta-card h3{font-size:20px;font-weight:600;margin:0;color:var(--on-dark)}
+.cta-card p{font-size:15px;line-height:1.6;color:var(--on-dark-muted);margin:0 0 6px}
+.cta-card .pill{align-self:flex-start;min-height:44px;font-size:14px}
+.cta-cards-1 .cta-card{background:none;border:0;padding:0}
+.cta-next{font-size:15px;line-height:1.6;color:var(--on-dark-2);margin-top:18px}
+.flow-contact .mail{margin-top:0;display:inline}
+@media (max-width:760px){.cta-band-grid{flex-direction:column;align-items:flex-start}.lp-actions .pill{width:100%}}
