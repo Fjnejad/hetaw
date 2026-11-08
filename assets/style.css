@@ -478,6 +478,7 @@ h1,h2,h3,p{margin:0}
 .with-head{max-width:820px;margin:0 auto 18px}
 .today-tag{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:var(--muted);background:#FFFFFF;padding:6px 10px;border-radius:999px}
 .today-tag.gold{color:var(--gold-dark);background:#FBF3E1}
+.with-icon{width:40px;height:40px;border-radius:10px;box-shadow:0 2px 8px rgba(11,31,59,.12);flex:0 0 auto}
 .today-title{font-size:16px;font-weight:600;color:var(--ink)}
 .today-badge{margin-left:auto;background:var(--ink);color:#FFFFFF;padding:8px 12px;border-radius:10px;font-weight:700;font-size:17px;line-height:1;display:flex;flex-direction:column;align-items:center;gap:3px}
 .today-badge small{font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;font-weight:500;color:#C9D0DD}

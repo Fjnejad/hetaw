@@ -22,7 +22,7 @@ def head(title, desc, path, extra=""):
 <meta name="theme-color" content="#0B1A33">
 <link rel="icon" type="image/png" href="assets/favicon.png?v=2">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="stylesheet" href="assets/style.css?v=20261107c">{extra}
+<link rel="stylesheet" href="assets/style.css?v=20261108a">{extra}
 </head>
 <body>
 '''
@@ -75,7 +75,7 @@ def contact(heading, intro=None, cards=True):
 </section>
 
 </main>
-<script src="assets/motion.js?v=20261107c" defer></script>
+<script src="assets/motion.js?v=20261108a" defer></script>
 </body>
 </html>
 '''
@@ -211,7 +211,7 @@ index = head("HETAW — Recognise endometriosis earlier, at the first visit",
       </ol>
       <p class="today-loop">… and back to the GP. Each specialist sees one fragment, treats it symptomatically and sends her home. Years pass between the first visit and the right referral.</p>
     </div>
-    <div class="with-head reveal"><span class="today-tag gold">With HETAW</span><span class="today-title">Recognised at the first visit: five steps in one consultation</span></div>
+    <div class="with-head reveal"><img class="with-icon" src="assets/hetaw-icon.png" alt="" width="40" height="40"><span class="today-tag gold">With HETAW</span><span class="today-title">Recognised at the first visit: five steps in one consultation</span></div>
     <ol class="tl">
       <li class="reveal"><span class="tl-n">1</span><div class="card tl-card"><h3>Patient presents</h3><p>GP or gynaecologist. Pain, cycle, bowel or bladder complaint — the first visit.</p></div></li>
       <li class="reveal delay-1"><span class="tl-n">2</span><div class="card tl-card"><h3>Doctor opens HETAW</h3><p>A structured symptom history: pain, cycle, digestive, urinary and fatigue symptoms, reproductive history, prior consultations. Two to three minutes.</p></div></li>
